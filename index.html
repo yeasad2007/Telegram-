@@ -6,7 +6,7 @@
   <title>Loading...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Updated Open Graph meta tags -->
+  <!-- Open Graph meta tags -->
   <meta property="og:title" content="Join Group Chat On Telegram" />
   <meta property="og:description" content="Click here to join our Telegram group and stay updated!" />
   <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" />
@@ -50,13 +50,12 @@
 
   <script>
     const adLinks = [
-      ",
-      "https://www.profitableratecpm.com/z6miqqddn?key=9f02b96a8654d81a842f44c79c355352",
+      "https://www.profitableratecpm.com/z6miqqddn?key=9f02b96a8654d81a842f44c79c355352"
     ];
 
     const redirectURL = "https://www.profitableratecpm.com/tmqzsf0q4?key=bcce19fcbafa81e42b08ecc2ce3ae3a2";
 
-    let index = 1;
+    let index = 0;
 
     function fireImpression(link) {
       const iframe = document.createElement("iframe");
@@ -69,7 +68,7 @@
       if (index < adLinks.length) {
         fireImpression(adLinks[index]);
         index++;
-        setTimeout(loadAds,1);
+        setTimeout(loadAds, 50); // Slight delay for better impression count
       } else {
         setTimeout(() => {
           window.location.href = redirectURL;

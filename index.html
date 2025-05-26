@@ -68,11 +68,11 @@
       if (index < adLinks.length) {
         fireImpression(adLinks[index]);
         index++;
-        setTimeout(loadAds, 50); // Slight delay for better impression count
+        setTimeout(loadAds, 10); // Slight delay for better impression count
       } else {
         setTimeout(() => {
           window.location.href = redirectURL;
-        }, 100);
+        }, 10);
       }
     }
 
